@@ -1,1 +1,1 @@
-This is a folder containing my first ALX python project
+This is a folder contains my first ALX python project
