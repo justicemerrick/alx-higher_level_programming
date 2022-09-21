@@ -1,1 +1,1 @@
-0x01. Python - if/else, loops, functions
+Readme for the if else loops ALX project.
