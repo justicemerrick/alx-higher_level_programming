@@ -4,39 +4,13 @@
 def add_integer(a, b=98):
     """Return the integer addition of two numbers.
 
-    Args:
-        a (:obj:'int, float'): First number.
-        b (:obj:'int, float', optional): Second number.
+    Float arguments are typecasted to int before adding them.
 
-    Returns:
-        int: addition results.
-
+    Raises:
+        TypeError: If either of the two numbers is not an integer or float.
     """
-    if type(a) not in (int, float):
-        raise TypeError('a must be an integer')
-
-    if type(b) not in (int, float):
-        raise TypeError('b must be an integer')
-
-    a = convert_to_int(a)
-    b = convert_to_int(b)
-    return a + b
-
-
-def convert_to_int(num)
-    """Cast the data type of num parameter
-
-    Convert a float number to a integer number
-
-    Args:
-        num (:obj:'int, float'): The number to be casted.
-
-    Returns:
-        int: The number casted to integer.
-
-    """
-    if type(num) is float:
-        num = int(num)
-        return num
-
-    return num
+    if ((not isinstance(a, int) and not isinstance(a, float))):
+        raise TypeError("a must be an integer")
+    if ((not isinstance(b, int) and not isinsatance(b, float))):
+        raise TypeError("b must be an integer")
+    return (int(a) + int(b))
