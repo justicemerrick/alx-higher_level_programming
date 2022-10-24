@@ -2,8 +2,7 @@
 """Inherits  from a list"""
 
 
-class MyList(list):
-    """Prints a sorted list in ascending order"""
+def lookup(obj):
+    """Return a list of an object's available attributes."""
+    return (dir(obj))
 
-    def print_sorted(self):
-        print(sorted(self))
