@@ -1,9 +1,6 @@
 #!/usr/bin/python3
-"""Inherits  from a list"""
+"""Defines an object attribute lookup function."""
 
-
-class MyList(list):
-    """Prints a sorted list in ascending order"""
-
-    def print_sorted(self):
-        print(sorted(self))
+def lookup(obj):
+    """Returns a list of avaiblable attributes and methods in the object"""
+    return (dir(obj))
