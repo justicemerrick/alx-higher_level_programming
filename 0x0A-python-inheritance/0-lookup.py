@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""Inherits  from a list."""
+"""Defines an object attribute lookup function."""
 
 def lookup(obj):
-    """Return a list of an object's available attributes."""
+    """Returns a list of avaiblable attributes and methods in the object"""
     return (dir(obj))
