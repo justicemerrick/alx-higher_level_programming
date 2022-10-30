@@ -165,7 +165,7 @@ Not just any list - they *must* be lists of lists!
 
     >>> print(matrix_mul([[1, 2]], [3, 4]))
     Traceback (most recent call last):
-    TypeError: m_b must be a list of lists
+    TypeError: m_b must be a list of lists.
 
 ::
 
